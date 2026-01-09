@@ -1,6 +1,6 @@
-# YouTube Heatmap Clipper
+# YouTube Heatmap Clipper 🎬
 
-[Bahasa Indonesia](README.md) | **English**
+[🇮🇩 Bahasa Indonesia](README.md) | 🇺🇸 **English** 
 
 A web application to extract the most engaging moments from YouTube videos using "Most Replayed" (heatmap) data, and automatically convert them into vertical-ready clips for Shorts, Reels, and TikTok — featuring AI-powered subtitles.
 

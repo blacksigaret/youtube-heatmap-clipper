@@ -1,6 +1,6 @@
-# YouTube Heatmap Clipper
+# YouTube Heatmap Clipper 🎬
 
-**Bahasa Indonesia** | [English](README_EN.md)
+🇮🇩 **Bahasa Indonesia** | [🇺🇸 English](README_EN.md)
 
 Web app buat ngambil momen paling “rame” dari video YouTube lewat data Most Replayed (heatmap), terus otomatis jadiin clip vertikal yang siap buat Shorts/Reels/TikTok — lengkap dengan opsi subtitle AI.
 
